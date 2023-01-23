@@ -1,36 +1,368 @@
-[
-    {
-        "id": "abc123",
-        "name": "Taco Bell",
-        "priceLevel": "1",
-        "slug": "taco-bell",
-        "menuItems": [
-            {
-                "id": "1a",
-                "name": "Chalupa",
-                "price": 4,
-                "categories": [
-                    "lunch",
-                    "dinner"
-                ]
-            }
-        ]
-    },
-    {
-        "id": "def456",
-        "name": "Chipotle",
-        "priceLevel": "2",
-        "slug": "chipotle",
-        "menuItems": [
-            {
-                "id": "1b",
-                "name": "Burrito",
-                "price": 13,
-                "categories": [
-                    "lunch",
-                    "dinner"
-                ]
-            }
-        ]
-    }
+[{
+		"id": "abc123",
+		"name": "Taco Bell",
+		"priceLevel": "1",
+		"slug": "taco-bell",
+		"menuItems": [{
+				"id": "1a",
+				"name": "Chalupa",
+				"price": 4,
+				"slug": "chalupa",
+				"category": [
+					"lunch",
+					"Specialty items"
+				]
+			},
+			{
+				"id": "1dda",
+				"name": "Soda",
+				"price": 2.5,
+				"slug": "soda",
+				"category": [
+					"drinks"
+				],
+				"requiredOptions": {
+					"flavor": [
+						"Mountain Dew",
+						"Brisk",
+						"Pepsi",
+						"Coke Zero"
+					]
+				}
+			},
+			{
+				"id": "1b",
+				"name": "Burrito Supreme",
+				"price": 3.9,
+				"slug": "burrito-supreme",
+				"category": [
+					"lunch",
+					"dinner",
+					"burritos"
+				],
+				"requiredOptions": {
+					"protien": [{
+							"name": "Beef",
+							"calories": 420
+						},
+						{
+							"name": "Steak",
+							"calories": 400,
+							"priceIncrease": 1.2
+						}
+
+					]
+				},
+				"extraOptions": {
+					"protien": [{
+							"name": "Beef",
+							"calories": 420,
+							"priceIncrease": 1.3
+						},
+						{
+							"name": "Beans",
+							"calories": 320,
+							"priceIncrease": 1.3
+						},
+						{
+							"name": "Steak",
+							"calories": 400,
+							"priceIncrease": 1.5
+						}
+					],
+					"addons": [{
+							"name": "Cheddar cheese",
+							"priceIncrease": 1.15
+						},
+						{
+							"name": "Reduced-fat sour cream",
+							"priceIncrease": 1.15
+						}
+					]
+				}
+			},
+			{
+				"id": "1sdfdda",
+				"name": "4pk Cinnabon Delights",
+				"price": 3.19,
+				"slug": "cinnabon-delights",
+				"category": [
+					"drinks"
+				]
+			}
+
+		]
+	},
+	{
+		"id": "def43456",
+		"name": "Chipotle",
+		"priceLevel": "2",
+		"slug": "chipotle",
+		"menuItems": [{
+				"id": "1b",
+				"name": "Beef Soft Taco",
+				"price": 3.9,
+				"slug": "beef-soft-taco",
+				"category": [
+					"lunch",
+					"dinner",
+					"tacos"
+				],
+				"extraOptions": {
+					"protien": [{
+						"name": "Beef",
+						"calories": 420,
+						"priceIncrease": 1.3
+					}],
+					"addons": [{
+						"name": "Cheddar cheese",
+						"priceIncrease": 1.15
+					}]
+				}
+			},
+			{
+				"id": "14rbvcb",
+				"name": "Fries Supreme",
+				"price": 5.19,
+				"slug": "fries-supreme",
+				"category": [
+					"lunch",
+					"fries"
+				],
+				"requiredOptions": {
+					"protien": [{
+							"name": "Beef",
+							"calories": 420
+						},
+						{
+							"name": "Beans",
+							"calories": 400
+						}
+
+					]
+				},
+				"extraOptions": {
+					"protien": [{
+						"name": "Beef",
+						"calories": 420,
+						"priceIncrease": 1.3
+					}, {
+						"name": "Beans",
+						"calories": 420,
+						"priceIncrease": 1.3
+					}],
+					"addons": [{
+							"name": "Cheddar cheese",
+							"priceIncrease": 1.15
+						},
+						{
+							"name": "Nacho cheese sauce",
+							"priceIncrease": 1.15
+						}
+					]
+				}
+			}
+		]
+	},
+	{
+		"id": "def43456",
+		"name": "Chatime",
+		"priceLevel": "3",
+		"slug": "chatime",
+		"menuItems": [{
+				"id": "546hertbf",
+				"name": "Chatime Signature Milk tea",
+				"price": 7.9,
+				"slug": "milk-tea",
+				"category": [
+					"teas",
+					"Chatime Signatures",
+					"tacos"
+				],
+				"requiredOptions": {
+					"Size": [{
+							"name": "Large",
+							"priceIncrease": 0.6
+						},
+						{
+							"name": "Regular"
+						}
+					],
+					"Ice/Temperature": [{
+							"name": "Hot"
+						},
+						{
+							"name": "No Ice"
+						},
+						{
+							"name": "Less Ice"
+						},
+						{
+							"name": "Normal Ice"
+						},
+						{
+							"name": "Extra Ice"
+						}
+					],
+					"Base": [{
+							"name": "Milk Tea"
+						},
+						{
+							"name": "Fresh Milk"
+						},
+						{
+							"name": "Oat Milk",
+							"priceIncrease": 1.5
+						}
+					],
+					"Sweetness": [{
+							"name": "No Sugar"
+						},
+						{
+							"name": "Min. Sugar"
+						},
+						{
+							"name": "30% Sugar"
+						},
+						{
+							"name": "50% Sugar"
+						},
+						{
+							"name": "80% Sugar"
+						},
+						{
+							"name": "100% Sugar"
+						},
+						{
+							"name": "50% Honey Sub"
+						},
+						{
+							"name": "100% Honey Sub"
+						}
+					]
+				},
+				"extraOptions": {
+					"topping": [{
+							"name": "Pearl",
+							"priceIncrease": 0.9
+						},
+						{
+							"name": "Grass Jelly",
+							"priceIncrease": 0.9
+						},
+						{
+							"name": "Pudding",
+							"priceIncrease": 0.9
+						},
+						{
+							"name": "Popping Boba(Lychee)",
+							"priceIncrease": 1.5
+						},
+						{
+							"name": "Aloe Vera",
+							"priceIncrease": 1.25
+						},
+						{
+							"name": "Brown Sugar Pearl",
+							"priceIncrease": 1.25
+						}
+
+					]
+				}
+			},
+			{
+				"id": "5463g5rvhertbf",
+				"name": "Mango Tea",
+				"price": 7.9,
+				"slug": "mango-tea",
+				"category": [
+					"teas",
+					"fruit tea"
+				],
+				"requiredOptions": {
+					"Size": [{
+							"name": "Large",
+							"priceIncrease": 0.6
+						},
+						{
+							"name": "Regular"
+						}
+					],
+					"Ice": [{
+							"name": "No Ice"
+						},
+						{
+							"name": "Less Ice"
+						},
+						{
+							"name": "Normal Ice"
+						},
+						{
+							"name": "Extra Ice"
+						}
+					],
+					"Tea Type": [{
+							"name": "Green Tea"
+						},
+						{
+							"name": "Black Tea"
+						}
+					],
+					"Sweetness": [{
+							"name": "No Sugar"
+						},
+						{
+							"name": "Min. Sugar"
+						},
+						{
+							"name": "30% Sugar"
+						},
+						{
+							"name": "50% Sugar"
+						},
+						{
+							"name": "80% Sugar"
+						},
+						{
+							"name": "100% Sugar"
+						},
+						{
+							"name": "50% Honey Sub"
+						},
+						{
+							"name": "100% Honey Sub"
+						}
+					]
+				},
+				"extraOptions": {
+					"topping": [{
+							"name": "Pearl",
+							"priceIncrease": 0.9
+						},
+						{
+							"name": "Grass Jelly",
+							"priceIncrease": 0.9
+						},
+						{
+							"name": "Pudding",
+							"priceIncrease": 0.9
+						},
+						{
+							"name": "Popping Boba(Lychee)",
+							"priceIncrease": 1.5
+						},
+						{
+							"name": "Aloe Vera",
+							"priceIncrease": 1.25
+						},
+						{
+							"name": "Brown Sugar Pearl",
+							"priceIncrease": 1.25
+						}
+
+					]
+				}
+			}
+		]
+	}
 ]
