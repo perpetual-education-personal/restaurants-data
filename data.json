@@ -1,9 +1,11 @@
-[{
-		"id": "abc123",
+[
+	{
+		"id": "a1",
 		"name": "Taco Bell",
 		"priceLevel": "1",
 		"slug": "taco-bell",
-		"categories": [{
+		"categories": [
+			{
 				"name": "Lunch",
 				"id": "cat001"
 			},
@@ -22,36 +24,28 @@
 			{
 				"name": "Burrito",
 				"id": "cat005"
-			}, {
+			},
+			{
 				"name": "Dessert",
 				"id": "cat006"
 			}
 		],
-		"menuItems": [{
+		"menuItems": [
+			{
 				"id": "1a",
 				"name": "Chalupa",
 				"price": 4,
 				"slug": "chalupa",
-				"category": [
-					"cat001",
-					"cat002"
-				]
+				"category": ["cat001", "cat002"]
 			},
 			{
 				"id": "1dda",
 				"name": "Soda",
 				"price": 2.5,
 				"slug": "soda",
-				"category": [
-					"cat003"
-				],
+				"category": ["cat003"],
 				"requiredOptions": {
-					"flavor": [
-						"Mountain Dew",
-						"Brisk",
-						"Pepsi",
-						"Coke Zero"
-					]
+					"flavor": ["Mountain Dew", "Brisk", "Pepsi", "Coke Zero"]
 				}
 			},
 			{
@@ -59,12 +53,10 @@
 				"name": "Burrito Supreme",
 				"price": 3.9,
 				"slug": "burrito-supreme",
-				"category": [
-					"cat002",
-					"cat005"
-				],
+				"category": ["cat002", "cat005"],
 				"requiredOptions": {
-					"protien": [{
+					"protien": [
+						{
 							"name": "Beef",
 							"calories": 420
 						},
@@ -73,11 +65,11 @@
 							"calories": 400,
 							"priceIncrease": 1.2
 						}
-
 					]
 				},
 				"extraOptions": {
-					"protien": [{
+					"protien": [
+						{
 							"name": "Beef",
 							"calories": 420,
 							"priceIncrease": 1.3
@@ -93,7 +85,8 @@
 							"priceIncrease": 1.5
 						}
 					],
-					"addons": [{
+					"addons": [
+						{
 							"name": "Cheddar cheese",
 							"priceIncrease": 1.15
 						},
@@ -109,19 +102,17 @@
 				"name": "4pk Cinnabon Delights",
 				"price": 3.19,
 				"slug": "cinnabon-delights",
-				"category": [
-					"cat006"
-				]
+				"category": ["cat006"]
 			}
-
 		]
 	},
 	{
-		"id": "def43456",
+		"id": "b2",
 		"name": "Chipotle",
 		"priceLevel": "2",
 		"slug": "chipotle",
-		"categories": [{
+		"categories": [
+			{
 				"name": "Lunch",
 				"id": "cat001"
 			},
@@ -140,34 +131,37 @@
 			{
 				"name": "Tacos",
 				"id": "cat005"
-			}, {
+			},
+			{
 				"name": "Dessert",
 				"id": "cat006"
-			}, {
+			},
+			{
 				"name": "Fries",
 				"id": "cat007"
 			}
 		],
-		"menuItems": [{
+		"menuItems": [
+			{
 				"id": "1b",
 				"name": "Beef Soft Taco",
 				"price": 3.9,
 				"slug": "beef-soft-taco",
-				"category": [
-					"cat001",
-					"cat004",
-					"cat005"
-				],
+				"category": ["cat001", "cat004", "cat005"],
 				"extraOptions": {
-					"protien": [{
-						"name": "Beef",
-						"calories": 420,
-						"priceIncrease": 1.3
-					}],
-					"addons": [{
-						"name": "Cheddar cheese",
-						"priceIncrease": 1.15
-					}]
+					"protien": [
+						{
+							"name": "Beef",
+							"calories": 420,
+							"priceIncrease": 1.3
+						}
+					],
+					"addons": [
+						{
+							"name": "Cheddar cheese",
+							"priceIncrease": 1.15
+						}
+					]
 				}
 			},
 			{
@@ -175,12 +169,10 @@
 				"name": "Fries Supreme",
 				"price": 5.19,
 				"slug": "fries-supreme",
-				"category": [
-					"cat001",
-					"cat007"
-				],
+				"category": ["cat001", "cat007"],
 				"requiredOptions": {
-					"protien": [{
+					"protien": [
+						{
 							"name": "Beef",
 							"calories": 420
 						},
@@ -188,20 +180,23 @@
 							"name": "Beans",
 							"calories": 400
 						}
-
 					]
 				},
 				"extraOptions": {
-					"protien": [{
-						"name": "Beef",
-						"calories": 420,
-						"priceIncrease": 1.3
-					}, {
-						"name": "Beans",
-						"calories": 420,
-						"priceIncrease": 1.3
-					}],
-					"addons": [{
+					"protien": [
+						{
+							"name": "Beef",
+							"calories": 420,
+							"priceIncrease": 1.3
+						},
+						{
+							"name": "Beans",
+							"calories": 420,
+							"priceIncrease": 1.3
+						}
+					],
+					"addons": [
+						{
 							"name": "Cheddar cheese",
 							"priceIncrease": 1.15
 						},
@@ -215,11 +210,12 @@
 		]
 	},
 	{
-		"id": "def43456",
+		"id": "c3",
 		"name": "Chatime",
 		"priceLevel": "3",
 		"slug": "chatime",
-		"categories": [{
+		"categories": [
+			{
 				"name": "Tea",
 				"id": "cat011"
 			},
@@ -231,19 +227,17 @@
 				"name": "Fruit Tea",
 				"id": "cat033"
 			}
-
 		],
-		"menuItems": [{
+		"menuItems": [
+			{
 				"id": "546hertbf",
 				"name": "Chatime Signature Milk tea",
 				"price": 7.9,
 				"slug": "milk-tea",
-				"category": [
-					"cat011",
-					"cat022"
-				],
+				"category": ["cat011", "cat022"],
 				"requiredOptions": {
-					"Size": [{
+					"Size": [
+						{
 							"name": "Large",
 							"priceIncrease": 0.6
 						},
@@ -251,7 +245,8 @@
 							"name": "Regular"
 						}
 					],
-					"Ice/Temperature": [{
+					"Ice/Temperature": [
+						{
 							"name": "Hot"
 						},
 						{
@@ -267,7 +262,8 @@
 							"name": "Extra Ice"
 						}
 					],
-					"Base": [{
+					"Base": [
+						{
 							"name": "Milk Tea"
 						},
 						{
@@ -278,7 +274,8 @@
 							"priceIncrease": 1.5
 						}
 					],
-					"Sweetness": [{
+					"Sweetness": [
+						{
 							"name": "No Sugar"
 						},
 						{
@@ -305,7 +302,8 @@
 					]
 				},
 				"extraOptions": {
-					"topping": [{
+					"topping": [
+						{
 							"name": "Pearl",
 							"priceIncrease": 0.9
 						},
@@ -329,7 +327,6 @@
 							"name": "Brown Sugar Pearl",
 							"priceIncrease": 1.25
 						}
-
 					]
 				}
 			},
@@ -338,12 +335,10 @@
 				"name": "Mango Tea",
 				"price": 7.9,
 				"slug": "mango-tea",
-				"category": [
-					"cat011",
-					"cat033"
-				],
+				"category": ["cat011", "cat033"],
 				"requiredOptions": {
-					"Size": [{
+					"Size": [
+						{
 							"name": "Large",
 							"priceIncrease": 0.6
 						},
@@ -351,7 +346,8 @@
 							"name": "Regular"
 						}
 					],
-					"Ice": [{
+					"Ice": [
+						{
 							"name": "No Ice"
 						},
 						{
@@ -364,14 +360,16 @@
 							"name": "Extra Ice"
 						}
 					],
-					"Tea Type": [{
+					"Tea Type": [
+						{
 							"name": "Green Tea"
 						},
 						{
 							"name": "Black Tea"
 						}
 					],
-					"Sweetness": [{
+					"Sweetness": [
+						{
 							"name": "No Sugar"
 						},
 						{
@@ -398,7 +396,8 @@
 					]
 				},
 				"extraOptions": {
-					"topping": [{
+					"topping": [
+						{
 							"name": "Pearl",
 							"priceIncrease": 0.9
 						},
@@ -422,7 +421,6 @@
 							"name": "Brown Sugar Pearl",
 							"priceIncrease": 1.25
 						}
-
 					]
 				}
 			}
